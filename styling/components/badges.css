@@ -1,0 +1,268 @@
+.mxt-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.mxt-badge-pill {
+  border-radius: 10px;
+}
+
+.mxt-badge-pill-full {
+  border-radius: 9999px;
+}
+
+.mxt-badge-circle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.mxt-badge-circle-sm {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 0.6rem;
+}
+
+.mxt-badge-circle-lg {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 0.85rem;
+}
+
+.mxt-badge-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+}
+
+.mxt-badge-dot-sm {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.mxt-badge-dot-lg {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.mxt-badge-bar {
+  display: flex;
+  width: 100%;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.mxt-badge-bar-center {
+  justify-content: center;
+}
+
+.mxt-badge-bar-between {
+  justify-content: space-between;
+}
+
+.mxt-badge-square {
+  border-radius: 10px;
+  padding: 4px 12px;
+}
+
+.mxt-badge-sharp {
+  border-radius: 0;
+}
+
+.mxt-badge-outlined {
+  background: transparent;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.mxt-badge-toned {
+  border: none;
+}
+
+.mxt-badge-filled {
+  border: none;
+}
+
+.mxt-badge-ghost {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.mxt-badge-elevated {
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.mxt-badge-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mxt-badge-status::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.mxt-badge-counter {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 10px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+  border: 2px solid;
+}
+
+.mxt-badge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.mxt-badge-icon svg,
+.mxt-badge-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.mxt-badge-sm {
+  padding: 1px 8px;
+  font-size: 0.65rem;
+  border-radius: 10px;
+}
+
+.mxt-badge-lg {
+  padding: 4px 14px;
+  font-size: 0.85rem;
+  border-radius: 10px;
+}
+
+.mxt-badge-xl {
+  padding: 6px 18px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+}
+
+.mxt-badge-closable {
+  padding-right: 6px;
+}
+
+.mxt-badge-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.7rem;
+  line-height: 1;
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+
+.mxt-badge-close:hover {
+  opacity: 1;
+}
+
+.mxt-badge-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.mxt-badge-group-attached {
+  display: inline-flex;
+  gap: 0;
+}
+
+.mxt-badge-group-attached .mxt-badge {
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.mxt-badge-group-attached .mxt-badge:first-child {
+  border-radius: 10px 0 0 10px;
+  margin-left: 0;
+}
+
+.mxt-badge-group-attached .mxt-badge:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.mxt-badge-group-attached .mxt-badge:only-child {
+  border-radius: 10px;
+}
+
+.mxt-badge-interactive {
+  cursor: pointer;
+}
+
+.mxt-badge-interactive:hover {
+  transform: translateY(-1px);
+}
+
+.mxt-badge-interactive:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.mxt-badge-truncate {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}

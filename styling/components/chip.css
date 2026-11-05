@@ -1,0 +1,500 @@
+.mxt-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--mxt-radius-md);
+  border: 1px solid;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  cursor: default;
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--mxt-duration-fast) var(--mxt-ease-standard), border-color var(--mxt-duration-fast) var(--mxt-ease-standard), color var(--mxt-duration-fast) var(--mxt-ease-standard), transform var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-pill {
+  border-radius: var(--mxt-radius-full);
+}
+
+.mxt-chip-square {
+  border-radius: var(--mxt-radius-md);
+}
+
+.mxt-chip-sm {
+  padding: 2px 8px;
+  font-size: 0.72rem;
+  gap: 4px;
+}
+
+.mxt-chip-lg {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  gap: 8px;
+}
+
+.mxt-chip-filled {
+  border: 1px solid transparent;
+}
+
+.mxt-chip-outlined {
+  background: transparent;
+}
+
+.mxt-chip-toned {
+  border: 1px solid transparent;
+}
+
+.mxt-chip-ghost {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.mxt-chip-elevated {
+  border: 1px solid transparent;
+  box-shadow: var(--mxt-elevation-1);
+}
+
+.mxt-chip-interactive {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.mxt-chip-interactive:hover {
+  transform: translateY(-1px);
+}
+
+.mxt-chip-interactive:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.mxt-chip-selected {
+  font-weight: 700;
+}
+
+.mxt-chip-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.mxt-chip-lg .mxt-chip-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.mxt-chip-sm .mxt-chip-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.mxt-chip-icon svg,
+.mxt-chip-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.mxt-chip-icon-mask {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask-image: var(--mxt-icon-src);
+          mask-image: var(--mxt-icon-src);
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+.mxt-chip-label {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.mxt-chip-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--mxt-radius-full);
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-left: -4px;
+}
+
+.mxt-chip-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.mxt-chip-lg .mxt-chip-avatar {
+  width: 24px;
+  height: 24px;
+  margin-left: -6px;
+}
+
+.mxt-chip-sm .mxt-chip-avatar {
+  width: 16px;
+  height: 16px;
+  margin-left: -2px;
+}
+
+.mxt-chip-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin-right: -4px;
+  border: none;
+  border-radius: var(--mxt-radius-full);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  opacity: 0.55;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity var(--mxt-duration-fast) var(--mxt-ease-standard), background-color var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-remove:hover {
+  opacity: 1;
+  background: rgba(128, 128, 128, 0.18);
+}
+
+.mxt-chip-remove:active {
+  transform: scale(0.9);
+}
+
+.mxt-chip-remove svg {
+  width: 10px;
+  height: 10px;
+  display: block;
+}
+
+.mxt-chip-lg .mxt-chip-remove {
+  width: 18px;
+  height: 18px;
+  margin-right: -6px;
+}
+
+.mxt-chip-sm .mxt-chip-remove {
+  width: 14px;
+  height: 14px;
+  margin-right: -2px;
+}
+
+.mxt-chip-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: var(--mxt-radius-full);
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1;
+  background: rgba(128, 128, 128, 0.2);
+  flex-shrink: 0;
+  margin-right: -4px;
+}
+
+.mxt-chip-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.mxt-chip-group-lg {
+  gap: 10px;
+}
+
+.mxt-chip-group-sm {
+  gap: 4px;
+}
+
+.mxt-chip-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mxt-chip-input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: var(--mxt-radius-md);
+  border: 1px solid;
+  min-height: var(--mxt-control-height-md);
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  transition: border-color var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-input-wrap:focus-within {
+  border-color: currentColor;
+}
+
+.mxt-chip-input {
+  flex: 1;
+  min-width: 80px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 4px 6px;
+}
+
+.mxt-chip-input::placeholder {
+  opacity: 0.45;
+}
+
+.mxt-chip-input-wrap .mxt-chip {
+  margin: 2px 0;
+}
+
+.mxt-chip-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--mxt-radius-full);
+  border: 1px solid;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--mxt-duration-fast) var(--mxt-ease-standard), color var(--mxt-duration-fast) var(--mxt-ease-standard), border-color var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-filter:hover {
+  background: rgba(128, 128, 128, 0.08);
+}
+
+.mxt-chip-filter.mxt-chip-filter-active {
+  font-weight: 700;
+}
+
+.mxt-chip-filter-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  opacity: 0;
+  margin-left: -8px;
+  margin-right: -2px;
+  transition: opacity var(--mxt-duration-fast) var(--mxt-ease-standard), margin-left var(--mxt-duration-fast) var(--mxt-ease-standard), margin-right var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-filter-check svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.mxt-chip-filter.mxt-chip-filter-active .mxt-chip-filter-check {
+  opacity: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mxt-chip-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--mxt-radius-full);
+  border: 1px solid;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--mxt-duration-fast) var(--mxt-ease-standard), color var(--mxt-duration-fast) var(--mxt-ease-standard), border-color var(--mxt-duration-fast) var(--mxt-ease-standard), transform var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-choice:hover {
+  transform: translateY(-1px);
+}
+
+.mxt-chip-choice:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.mxt-chip-choice.mxt-chip-choice-active {
+  font-weight: 700;
+}
+
+.mxt-chip-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--mxt-radius-md);
+  border: 1px solid;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-toggle.mxt-chip-toggle-active {
+  font-weight: 700;
+}
+
+.mxt-chip-clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--mxt-radius-md);
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity var(--mxt-duration-fast) var(--mxt-ease-standard), background-color var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-clear:hover {
+  opacity: 1;
+  background: rgba(128, 128, 128, 0.12);
+}
+
+.mxt-chip-overflow {
+  position: relative;
+  display: inline-flex;
+}
+
+.mxt-chip-overflow-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: var(--mxt-radius-md);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+  background: rgba(128, 128, 128, 0.15);
+  border: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color var(--mxt-duration-fast) var(--mxt-ease-standard);
+}
+
+.mxt-chip-overflow-more:hover {
+  background: rgba(128, 128, 128, 0.25);
+}
+
+.mxt-chip-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: var(--mxt-radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid transparent;
+}
+
+.mxt-chip-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--mxt-radius-full);
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.mxt-chip-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.mxt-chip-stacked {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+.mxt-chip-centered {
+  justify-content: center;
+}
+
+.mxt-chip-truncate {
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (hover: none) {
+  .mxt-chip-interactive:hover,
+  .mxt-chip-choice:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mxt-chip,
+  .mxt-chip-choice,
+  .mxt-chip-interactive {
+    transition-duration: 0.01s;
+  }
+}
